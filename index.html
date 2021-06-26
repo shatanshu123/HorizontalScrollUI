@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<title>Horizontal scrolling template</title>
+
+	<link rel="stylesheet" href="css/scrolling.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+	window.jQuery || document.write("<script src='js/jquery-1.11.0.min.js'>\x3C/script>");
+	</script>
+	<script src="js/modernizr.js"></script>
+</head>
+
+<body>
+	<div id="header">
+
+	<div class="credits">
+			 Made with ❤ by Shatanshu
+		</div>
+		
+		<div class="padder">
+			<a href="#" data-page="0">Service 1</a>
+			<a href="#hash.html" data-page="1">Service 2</a>
+			<a href="#transition.html" data-page="2">Service 3</a>
+			<a href="#features.html" data-page="3">Service 4</a>
+		</div>
+	</div>
+	<div id="content">
+		<ul id="pages" class="animate">
+			<li id="page1" class="page overthrow">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+			</li>
+			<li id="page2" class="page overthrow">
+				<h2>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti.
+                                    <br><br>
+                                    Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</h2>
+			</li>
+			<li id="page3" class="page overthrow">
+				<h2>Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi, id sollicitudin diam ex at nisi.
+                                    <br><br>
+                                    Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis. Praesent at sem in massa iaculis pharetra.</h2>
+			</li>
+			<li id="page4" class="page overthrow">
+				
+
+				<div class="features">
+					<h2>Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien elit, mollis ut ultricies quis, fermentum nec ante.
+                                    <br><br>
+                                    Sed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum lectus, non sagittis ante euismod eu. </h2>
+				</div>
+
+				
+			</li>
+		</ul>
+	</div>
+	
+<script>
+// Do not use Hammer for IE <= 8
+if (window.addEventListener){
+	document.write("<script src=\"js/hammer.min.js\">\x3C/script>");
+}
+</script>
+<script src="js/hscroller.js"></script>
+<script src="js/overthrow.min.js"></script>
+<script src="js/jquery.ba-bbq.min.js"></script>
+
+<script>
+$(function onLoad(){
+    var scroller = HScroller.create("#pages"); // specify container element
+
+    // showPage allows you to pragmatically change a change
+    // the second parameter allows you specify whether you want to animate the transition
+
+    //scroller.showPage(pagenum, true); 
+});
+</script>
+</body>
+</html>
